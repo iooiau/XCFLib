@@ -1,0 +1,79 @@
+
+
+    XCFLib ver.0.3.1                          Copyright(c) 2010-2013 itow,y.
+
+
+■はじめに
+
+  XCFLib は、GIMP で使用される XCF フォーマットの画像の読み込みを行うためのライ
+  ブラリです。
+  XCF 用の Susie Plug-in のソースも含まれています。
+
+
+■ライセンス
+
+  ・このライブラリは LGPL です。
+  ・著作権は作者に帰属します。
+
+
+■使用ライブラリ
+
+  圧縮形式の対応のため、以下のライブラリを利用しています。
+
+  ・zlib version 1.2.8, April 28, 2013
+      Copyright (C) 1995-2013 Jean-loup Gailly and Mark Adler
+
+  ・bzip2/libbzip2 version 1.0.5 of 10 December 2007
+      Copyright (C) 1996-2007 Julian Seward
+
+
+■ビルドについて
+
+  zlib のソースファイルを XCFLib\zlib に、bzip2 のソースファイルを XCFLib\bzip2
+  に入れて、XCFLib.sln を開いてビルドしてください。
+
+
+■更新履歴
+
+  ver.0.3.1  2013/ 9/15
+    ・アルファチャンネルのある画像からアルファチャンネルのある画像への、標準モー
+      ドの合成が正常に行われない不具合を修正した
+
+  ver.0.3.0  2013/ 9/ 6
+    ・レイヤーグループを使用した画像に対応した
+    ・xcflCompositePixels でアルファチャンネルのある画像への合成に対応した
+    ・xcflOffsetList_Read で要素数が16を超える場合に正常に動作しない不具合を修正
+      した
+    ・グレイスケールで合成モードが色相・彩度・色・明度のいずれかの場合、GIMP と
+      表示が異なるのを修正した
+    ・その他細かい修正を行った
+
+  ver.0.2.2  2011/ 5/ 8
+    ・合成処理を高速化した
+    ・グレースケールのスクリーン合成が正常に行われない不具合を修正した
+
+  ver.0.2.1  2010/ 6/19
+    ・xcflDecompressHeader をちゃんと実装した
+    ・xcflMemoryDest_CreateSource 関数を追加した
+    ・xcflSource_CreateFileSource と xcflSource_CreateHandleSource の引数に
+      Close を追加した
+    ・xcflMemoryDest_GetBuffer 関数のエラーチェックが間違っていたのを修正した
+    ・xcflImage_GetInfo 関数で解像度が正常に取得できない不具合を修正した
+
+  ver.0.2.0  2010/ 6/17
+    ・gzip / bzip2 圧縮に対応した
+    ・xcflCheckSignature の引数に Size を追加した
+    ・Windows でのコールバック関数の呼び出し規約を __stdcall に変更した
+    ・その他細かい修正を行った
+
+  ver.0.1.0  2010/ 6/13
+    ・最初のリリース
+
+
+■アドレス
+
+  Web    : http://www.geocities.jp/iooiau/
+  E-Mail : iooiau@yahoo.co.jp
+
+
+[EOF]

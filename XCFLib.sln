@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XCFLib", "XCFLib\XCFLib.vcproj", "{9166F7D0-2E37-4025-BF19-40A9A7CCCFFE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SusiePlugin", "SusiePlugin\SusiePlugin.vcproj", "{C79FC636-6742-4180-9E77-E1E9BFF9E726}"
+	ProjectSection(ProjectDependencies) = postProject
+		{253942D7-5DDC-41D9-A02C-A8BF82482348} = {253942D7-5DDC-41D9-A02C-A8BF82482348}
+		{9166F7D0-2E37-4025-BF19-40A9A7CCCFFE} = {9166F7D0-2E37-4025-BF19-40A9A7CCCFFE}
+		{81D45FCB-1AEE-49D5-BD9C-6B8BC93F48E4} = {81D45FCB-1AEE-49D5-BD9C-6B8BC93F48E4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SusiePluginTest", "SusiePlugin\SusiePluginTest.vcproj", "{226D48E0-517E-4414-A7AB-6E4A42B78486}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C79FC636-6742-4180-9E77-E1E9BFF9E726} = {C79FC636-6742-4180-9E77-E1E9BFF9E726}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{FA4110C8-B199-45C1-8EDD-857879CD26E5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "XCFLib\zlib\zlib.vcproj", "{253942D7-5DDC-41D9-A02C-A8BF82482348}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libbz2", "XCFLib\bzip2\libbz2.vcproj", "{81D45FCB-1AEE-49D5-BD9C-6B8BC93F48E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9166F7D0-2E37-4025-BF19-40A9A7CCCFFE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9166F7D0-2E37-4025-BF19-40A9A7CCCFFE}.Debug|Win32.Build.0 = Debug|Win32
+		{9166F7D0-2E37-4025-BF19-40A9A7CCCFFE}.Release|Win32.ActiveCfg = Release|Win32
+		{9166F7D0-2E37-4025-BF19-40A9A7CCCFFE}.Release|Win32.Build.0 = Release|Win32
+		{C79FC636-6742-4180-9E77-E1E9BFF9E726}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C79FC636-6742-4180-9E77-E1E9BFF9E726}.Debug|Win32.Build.0 = Debug|Win32
+		{C79FC636-6742-4180-9E77-E1E9BFF9E726}.Release|Win32.ActiveCfg = Release|Win32
+		{C79FC636-6742-4180-9E77-E1E9BFF9E726}.Release|Win32.Build.0 = Release|Win32
+		{226D48E0-517E-4414-A7AB-6E4A42B78486}.Debug|Win32.ActiveCfg = Debug|Win32
+		{226D48E0-517E-4414-A7AB-6E4A42B78486}.Debug|Win32.Build.0 = Debug|Win32
+		{226D48E0-517E-4414-A7AB-6E4A42B78486}.Release|Win32.ActiveCfg = Release|Win32
+		{226D48E0-517E-4414-A7AB-6E4A42B78486}.Release|Win32.Build.0 = Release|Win32
+		{253942D7-5DDC-41D9-A02C-A8BF82482348}.Debug|Win32.ActiveCfg = Debug|Win32
+		{253942D7-5DDC-41D9-A02C-A8BF82482348}.Debug|Win32.Build.0 = Debug|Win32
+		{253942D7-5DDC-41D9-A02C-A8BF82482348}.Release|Win32.ActiveCfg = Release|Win32
+		{253942D7-5DDC-41D9-A02C-A8BF82482348}.Release|Win32.Build.0 = Release|Win32
+		{81D45FCB-1AEE-49D5-BD9C-6B8BC93F48E4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{81D45FCB-1AEE-49D5-BD9C-6B8BC93F48E4}.Debug|Win32.Build.0 = Debug|Win32
+		{81D45FCB-1AEE-49D5-BD9C-6B8BC93F48E4}.Release|Win32.ActiveCfg = Release|Win32
+		{81D45FCB-1AEE-49D5-BD9C-6B8BC93F48E4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{253942D7-5DDC-41D9-A02C-A8BF82482348} = {FA4110C8-B199-45C1-8EDD-857879CD26E5}
+		{81D45FCB-1AEE-49D5-BD9C-6B8BC93F48E4} = {FA4110C8-B199-45C1-8EDD-857879CD26E5}
+	EndGlobalSection
+EndGlobal
